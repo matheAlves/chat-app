@@ -2,9 +2,10 @@
 
 This is a in-development chat and instant messaging app in React
 
-## Future features
+## Planned features
 - account registration
 - global chat
+- add contacts
 - private messages
 
 ## Scripts
