@@ -21,4 +21,4 @@ You may also see any lint errors in the console.
 
 ## Reference
 [Chat Engine](https://chatengine.io/)  
-[Javascript Mastery on Youtube](https://www.youtube.com/watch?v=jcOKU9f86XE&t=1548s&ab_channel=JavaScriptMastery)
+[adrianhajdin/chat_application](https://github.com/adrianhajdin/chat_application)
