@@ -1,6 +1,6 @@
 import { ChatEngine } from 'react-chat-engine';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import RegistrationForm from './components/Feed/Login/RegistrationForm';
+import RegistrationForm from './components/Login/RegistrationForm';
 
 const router = createBrowserRouter([
   {
