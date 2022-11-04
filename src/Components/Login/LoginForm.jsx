@@ -43,7 +43,7 @@ function LoginForm() {
         await axios.post(`https://api.chatengine.io/chats/${chatroomId}/people/`, addUserToChatBody, addUserToChatHeaders);
         navigate('/chat');
       } catch (err) {
-        setError('Não foi possível criar usuario.');
+        setError('unable to register user');
       }
     }
     if (returningUser) {
