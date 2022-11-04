@@ -41,7 +41,7 @@ function LoginForm() {
       try {
         await axios.post('https://api.chatengine.io/users/', user, createUserHeaders);
         await axios.post(`https://api.chatengine.io/chats/${chatroomId}/people/`, addUserToChatBody, addUserToChatHeaders);
-        navigate('/chat');
+        navigate('/chat-app/chat');
       } catch (err) {
         setError('unable to register user');
       }
@@ -55,7 +55,7 @@ function LoginForm() {
       try {
         await axios.get('https://api.chatengine.io/users/me/', { headers });
         setError('');
-        navigate('/chat');
+        navigate('/chat-app/chat');
       } catch (err) {
         setError('wrong password');
       }

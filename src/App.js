@@ -9,11 +9,11 @@ function App() {
   const projectId = process.env.REACT_APP_PROJECT_ID;
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: '/chat-app',
       element: <LoginForm />,
     },
     {
-      path: '/chat',
+      path: 'chat-app/chat',
       element: <ChatEngine
         height="100vh"
         projectID={ projectId }
