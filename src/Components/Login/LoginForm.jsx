@@ -23,12 +23,12 @@ function LoginForm() {
     const returningUser = await checkIfReturningUser();
     if (!returningUser) {
       const createUserHeaders = { headers: { 'PRIVATE-KEY': projectKey } };
-      //   const addUserToChatHeaders = { headers: {
-      //     'Project-ID': 'b027da1d-5f95-49a5-9f9c-fe9bf58a6630',
-      //     'User-Name': username,
-      //     'User-Secret': secret,
-      //   } };
-      //   const addUserToChatBody = { username };
+      const addUserToChatHeaders = { headers: {
+        'Project-ID': 'b027da1d-5f95-49a5-9f9c-fe9bf58a6630',
+        'User-Name': 'admin',
+        'User-Secret': process.env.REACT_APP_ADMIN_PASSWORD,
+      } };
+      const addUserToChatBody = { username };
       const user = {
         username,
         secret,
@@ -38,7 +38,7 @@ function LoginForm() {
 
       try {
         await axios.post('https://api.chatengine.io/users/', user, createUserHeaders);
-        // await axios.get('https://api.chatengine.io/chats/136028/people/', addUserToChatBody, addUserToChatHeaders);
+        await axios.post('https://api.chatengine.io/chats/136028/people/', addUserToChatBody, addUserToChatHeaders);
         navigate('/chat');
       } catch (err) {
         setError('Não foi possível criar usuario.');
