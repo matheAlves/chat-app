@@ -7,6 +7,7 @@ import './Form.css';
 
 const projectKey = process.env.REACT_APP_PROJECT_KEY;
 const projectId = process.env.REACT_APP_PROJECT_ID;
+const chatroomId = process.env.REACT_APP_MAIN_ROOM;
 
 function LoginForm() {
   const { username, setUsername, secret, setSecret } = useContext(MyContext);
@@ -39,7 +40,7 @@ function LoginForm() {
 
       try {
         await axios.post('https://api.chatengine.io/users/', user, createUserHeaders);
-        await axios.post('https://api.chatengine.io/chats/136028/people/', addUserToChatBody, addUserToChatHeaders);
+        await axios.post(`https://api.chatengine.io/chats/${chatroomId}/people/`, addUserToChatBody, addUserToChatHeaders);
         navigate('/chat');
       } catch (err) {
         setError('Não foi possível criar usuario.');
