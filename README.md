@@ -15,7 +15,7 @@ https://mathealves.github.io/chat-app/
 - add contacts
 - private messages
 
-## Setup
+## Run Locally
 ### install dependencies
 ### `npm i`
 
