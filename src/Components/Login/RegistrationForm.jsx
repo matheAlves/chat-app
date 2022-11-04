@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-max-depth */
 import { useState } from 'react';
 import axios from 'axios';
-import './RegistrationForm.css';
+import './Form.css';
 
 const projectKey = 'aef0fb40-a876-4b26-8f81-b5573eeeab10';
 
-function LoginForm() {
+function RegistrationForm() {
   const [username, setUsername] = useState('');
   const [secret, setSecret] = useState('');
   const [error, setError] = useState('');
@@ -69,4 +69,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default RegistrationForm;
