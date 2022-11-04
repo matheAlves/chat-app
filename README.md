@@ -5,7 +5,7 @@ This is a in-development chat and instant messaging react app.
 ## Features
 ### account registration
   the login screen doubles as registration screen:  
-  when a non-existent username is used, it automatically creates a new user
+  when a non-existent username is given, it automatically creates a new user
 ### global chat
   all new users are automaticaly added to main chat room
 
