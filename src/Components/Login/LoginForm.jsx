@@ -5,7 +5,8 @@ import axios from 'axios';
 import MyContext from '../../Provider/Context';
 import './Form.css';
 
-const projectKey = process.env.REACT_APP_PRIVATE_KEY;
+const projectKey = process.env.REACT_APP_PROJECT_KEY;
+const projectId = process.env.REACT_APP_PROJECT_ID;
 
 function LoginForm() {
   const { username, setUsername, secret, setSecret } = useContext(MyContext);
@@ -24,8 +25,8 @@ function LoginForm() {
     if (!returningUser) {
       const createUserHeaders = { headers: { 'PRIVATE-KEY': projectKey } };
       const addUserToChatHeaders = { headers: {
-        'Project-ID': 'b027da1d-5f95-49a5-9f9c-fe9bf58a6630',
-        'User-Name': 'admin',
+        'Project-ID': projectId,
+        'User-Name': process.env.REACT_APP_ADMIN_USERNAME,
         'User-Secret': process.env.REACT_APP_ADMIN_PASSWORD,
       } };
       const addUserToChatBody = { username };
@@ -46,14 +47,14 @@ function LoginForm() {
     }
     if (returningUser) {
       const headers = {
-        'Project-ID': 'b027da1d-5f95-49a5-9f9c-fe9bf58a6630',
+        'Project-ID': projectId,
         'User-Name': username,
         'User-Secret': secret,
       };
       try {
         await axios.get('https://api.chatengine.io/users/me/', { headers });
-        navigate('/chat');
         setError('');
+        navigate('/chat');
       } catch (err) {
         setError('wrong password');
       }

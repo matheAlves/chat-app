@@ -6,6 +6,7 @@ import MyContext from './Provider/Context';
 
 function App() {
   const { username, secret } = useContext(MyContext);
+  const projectId = process.env.REACT_APP_PROJECT_ID;
   const router = createBrowserRouter([
     {
       path: '/',
@@ -15,7 +16,7 @@ function App() {
       path: '/chat',
       element: <ChatEngine
         height="100vh"
-        projectID="b027da1d-5f95-49a5-9f9c-fe9bf58a6630"
+        projectID={ projectId }
         userName={ username }
         userSecret={ secret }
       />,
