@@ -1,5 +1,5 @@
 # Chat App
-This is a in-development chat and instant messaging app in React.
+This is a in-development chat and instant messaging react app.
 
 
 ## Features
