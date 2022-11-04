@@ -1,6 +1,8 @@
 # Chat App
 This is a in-development chat and instant messaging app.
 
+## Demo
+https://mathealves.github.io/chat-app/
 
 ## Features
 ### account registration
@@ -13,7 +15,7 @@ This is a in-development chat and instant messaging app.
 - add contacts
 - private messages
 
-## Setup
+## Run Locally
 ### install dependencies
 ### `npm i`
 
