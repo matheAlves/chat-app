@@ -21,7 +21,7 @@ https://mathealves.github.io/chat-app/
 
 ### connect with Chat Engine account
 To hook up the application with your [Chat Engine](https://chatengine.io/) account, create a new project and new chat that will serve as your main room.  
-Create a .env file at app root with this info:  
+Create a .env.local file at app root with this info:  
 REACT_APP_PROJECT_KEY={PROJECT PRIVATE KEY}  
 REACT_APP_PROJECT_ID={PROJECT ID}  
 REACT_APP_ADMIN_USERNAME={CHAT ADMIN USERNAME}  
