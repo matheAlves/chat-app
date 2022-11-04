@@ -32,8 +32,8 @@ function LoginForm() {
       const user = {
         username,
         secret,
-        first_name: 'null',
-        last_name: 'null',
+        first_name: username,
+        last_name: '',
       };
 
       try {
