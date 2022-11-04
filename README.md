@@ -21,6 +21,7 @@ https://mathealves.github.io/chat-app/
 ## Planned features
 - add contacts
 - private messages
+- complete visual overhaul
 
 ## Run Locally
 ### install dependencies
