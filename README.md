@@ -1,5 +1,12 @@
 # Chat App
 This is a in-development chat and instant messaging app.
+It uses:
+- React
+- React Hooks
+- Context API
+- React Router
+- React Chat Engine
+- Requests to API
 
 ## Demo
 https://mathealves.github.io/chat-app/
