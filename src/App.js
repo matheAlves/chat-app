@@ -16,15 +16,15 @@ function App() {
       path: 'chat-app/chat',
       element: <ChatEngine
         height="100vh"
-        projectID={ projectId }
-        userName={ username }
-        userSecret={ secret }
+        projectID={projectId}
+        userName={username}
+        userSecret={secret}
       />,
     },
   ]);
 
   return (
-    <RouterProvider router={ router }>
+    <RouterProvider router={router}>
       <LoginForm />
     </RouterProvider>
   );
